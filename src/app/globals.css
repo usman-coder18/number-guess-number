@@ -1,0 +1,195 @@
+/* globals.css */
+
+/* General reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+  flex-direction: column;
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-smooth.png');
+  background-size: cover;
+}
+
+#wrapper {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+#wrapper:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Form and input field styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+input[type="number"] {
+  padding: 12px 15px;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 70%;
+  text-align: center;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border: 2px solid #4CAF50;
+}
+
+input[type="submit"] {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+input[type="submit"]:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Result and feedback messages */
+.resultParas {
+  margin-top: 20px;
+}
+
+.guesses {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 1.1rem;
+}
+
+.lastResult {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #FF6347;
+  margin-top: 15px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.lowOrHi {
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e53e3e;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Styling for when the game is over */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 450px) {
+  #wrapper {
+    padding: 20px;
+    max-width: 350px;
+  }
+
+  input[type="number"] {
+    width: 80%;
+  }
+
+  input[type="submit"], button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
