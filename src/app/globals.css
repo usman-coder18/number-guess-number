@@ -1,6 +1,4 @@
-/* globals.css */
 
-/* General reset and body styling */
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +46,6 @@ p {
   color: #444;
 }
 
-/* Form and input field styles */
 .form {
   display: flex;
   flex-direction: column;
@@ -103,7 +100,6 @@ input[type="submit"]:disabled {
   transform: none;
 }
 
-/* Result and feedback messages */
 .resultParas {
   margin-top: 20px;
 }
@@ -155,7 +151,6 @@ button:disabled {
   transform: none;
 }
 
-/* Styling for when the game is over */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -173,7 +168,6 @@ h2 {
   color: #333;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 450px) {
   #wrapper {
     padding: 20px;
